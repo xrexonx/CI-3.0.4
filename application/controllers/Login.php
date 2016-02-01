@@ -25,7 +25,6 @@ class Login extends CI_Controller {
 	}
 
 	function logout() {
-
 		$this->users->logout();		
 		redirect(base_url());
 	}

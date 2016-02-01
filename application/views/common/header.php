@@ -12,4 +12,10 @@
 		
 	</head>
 	<body ng-app="rexon">
-	<?php //$this->load->view('common/navbar');?>
+
+	<?php
+		if (isset($isLoggedIn)) {
+			$this->load->view('common/navbar');
+		}
+	 
+
