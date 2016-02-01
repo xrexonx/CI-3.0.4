@@ -1,3 +1,13 @@
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <div class="container" ng-controller="LoginCtrl">
     <div class="panel panel-default">
         <div class="panel-heading" ng-if="!message"><?= $title ?></div>
