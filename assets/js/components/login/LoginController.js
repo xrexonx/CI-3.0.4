@@ -1,4 +1,5 @@
 (function() {
+    
     'use strict';
 
     angular
@@ -16,7 +17,7 @@
                         .login(vm.users)
                         .then(function (response) {
                         	if (response.data.success) {
-                        		window.location = 'http://localhost/CI-3.0.4/home/';
+                        		window.location = 'http://localhost/CI-3.0.4/dashboard/';
                         	} else {
                                 vm.message = true;
                             }

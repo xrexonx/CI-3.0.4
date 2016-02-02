@@ -1,15 +1,16 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Dashboard extends CI_Controller {
 
 	public function index ()
 	{
 		$isLoggedIn = $this->session->userdata('isLoggedIn');
-		
+
 		$data = [
-			'title'   => 'Home',
-			'content' => 'components/property/property',
+			'title'   => 'Dashboard',
+			'content' => 'components/dashboard/dashboard',
 			'name' => $this->session->userdata('name'),
 			'isLoggedIn' => $isLoggedIn
 		];
