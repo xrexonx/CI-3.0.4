@@ -2,11 +2,13 @@
 
 class Users extends CI_Model {
 
-	function insert($data) {
+	function insert($data) 
+	{
 		return $this->db->insert('user', $data);
 	}
 
-	function login($email, $password) {
+	function login($email, $password) 
+	{
 
 		$this->db->where('email', $email);
 		$this->db->where('password', md5($password));
